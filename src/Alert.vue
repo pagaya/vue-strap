@@ -33,7 +33,7 @@ export default {
   watch: {
     val (val) {
       if (val && this.durationNum > 0) { this._delayClose() }
-      this.$emit('input', val)
+      this.$emit('update:value', val)
     },
     value (val) {
       if (this.val !== val) {
